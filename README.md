@@ -1,13 +1,11 @@
-# documentation-template
+## Grundlagen der digitalen Kommunikation. Documentation WiSe 23/24. Maryia Kukharenka.
 
-template repo for semester documentation
+Contents
 
-## Todo:
-
-- [ ] Add a short description of this repos content.
-- [ ] Make sure to add a license to your project. https://choosealicense.com/
-- [ ] Make sure to publish your project via Netlify.com
-- [ ] Make sure to add your images to the `assets/images` folder and link them in your documentation.
+- [ ] Introduction
+- [ ] Small miltiples
+- [ ] Little creatures
+- [ ] Sleeping uncle
 
 MIT License
 

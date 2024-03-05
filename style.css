@@ -152,6 +152,9 @@ img {
   border-radius: 5px;
 }
 
+.button-link {
+    text-decoration: none;
+  }
 
 button {
     padding: 20px;
