@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>AttriCSS - A classless css Framework for beautiful websites</title>
+	</head>
+
+	<body>
+		<nav>
+			<header>
+				<a href="index.html">Documentation WiSe 23/24</a>
+				<label for="nav"><i class="fas fa-bars"></i></label>
+			</header>
+			<input type="checkbox" id="nav" hidden checked />
+			<div overflow>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="index2.html"> Small multiples </a>
+					</li>
+					<li>
+						<a href="index3.html"> Little creatures </a>
+					</li>
+					<li>
+						<a href="index4.html">Sleeping uncle</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<section container>
+			<h2>Small multiples</h2>
+
+			<p>
+				My task was to write a code that would produce different pictures,
+				depending on randomely chosen by computer data. I couldn't rely entirely
+				on the random selction of values, because then the code simply wouldn't
+				make sense at all, producing every time completely different results
+				without any correlation with each other.
+			</p>
+
+			<p>
+				I don't think that it would be particulatly advisable to explain in
+				detail, fow i wrote this code. However, for those interested, I will
+				attach it below though.
+			</p>
+
+			<pre><code>
+function setup() {
+// setup runs once
+const canvas = createCanvas(520, 520);
+canvas.parent("sketch");
+background(255);
+angleMode(DEGREES);
+
+const step = 40;
+const cell = step/2;
+
+for (let x = cell / 2; x < width; x = x + step) {
+	for (let y = cell / 2; y < height; y += step) {
+
+		push();
+
+		strokeWeight(random(1, 3));
+		circle(x, y, cell + random(-30, 0));
+
+		fill(10 + random(50, 200));
+		let i = random(-10, 10);
+		arc(x, y, cell + i, cell + i, random(0, 270), random(90, 360));
+
+		noFill();
+		let n = random(5, 10);
+		arc(x, y, cell + n, cell + n, random(0, 270), random(90, 360));
+
+		pop();
+	}}}
+
+function draw() {
+	// draw runs all the time
+}
+function keyPressed() {
+	if (key === "S" || key === "s") {
+		save("smallmultiples-mkukharenka.png");
+	}}
+			</code></pre>
+
+			<h3>Images</h3>
+			<img src="assets/images/smallmulpic.png" alt="This is an image." />
+
+		</section>
+
+	</body>
+</html>

@@ -1,19 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-		<title>Page Title</title>
-		<meta name="description" content="something" />
-		<meta name="author" content="me" />
-
-		<link rel="stylesheet" type="text/css" href="/style.css" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>AttriCSS - A classless css Framework for beautiful websites</title>
 	</head>
+
 	<body>
-		<h1>Hello World</h1>
-		<img src="/assets/images/kitten.png" />
-		<script type="text/javascript" src="/index.js"></script>
+		<nav>
+			<header>
+				<a href="index.html">Documentation WiSe 23/24</a>
+				<label for="nav"><i class="fas fa-bars"></i></label>
+			</header>
+			<input type="checkbox" id="nav" hidden checked />
+			<div overflow>
+				<ul>
+					<li>
+						<a href="index.html">Home</a></li>
+					<li>
+						<a href="index2.html"> Small multiples </a>
+					</li>
+					<li>
+						<a href="index3.html"> Little creatures </a>
+					</li>
+					<li>
+						<a href="index4.html">Sleeping uncle</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section container>
+			<h3>Grundlagen der digitalen Kommunikation</h3>
+			<p>
+				Hello World! My name is <b>Maryia Kukharenka</b>. I want to present to
+				you my first steps in programming that I made in the
+				<mark>Digital Communication</mark>
+				class.
+			</p>
+			<h6>So what did i learn?</h6>
+			<p>
+				Obviously, i started by coding simple grapfic images. It reminded me on
+				drawing small geometric illustrations in paint.exe on the old Windows 98
+				in my childhood. Just like when I moved from coloring outlined
+				characters to creating my own projects, now with each code i found out
+				more and more subtleties of the programming languages i was learning and
+				not only. During the semester:
+			</p>
+			<ul>
+				<li>
+					I've got familiar with 4 programming languages, namely
+					<b>JavaScript, HTML, CSS and C++</b>.
+				</li>
+				<li>
+					I took a glance at <b>phisical building</b> and computer
+					<b>hardware.</b>
+				</li>
+				<li>
+					Working on our final group project, I experienced on myself the role
+					of a <b>frontend developer</b>.
+				</li>
+			</ul>
+			<p>Well, now i offer you to take a closer look at some of my projects:</p>
+		</section>
+
+		<section container>
+			<a href="index2.html" class="button-link">
+				<button>Small multiples</button>
+			  </a>
+			
+			<a href="index3.html" class="button-link">
+				<button>Little creatures</button>
+			  </a>
+
+			<a href="index4.html" class="button-link">
+				<button>Sleeping uncle</button>
+			  </a>
+
+		</section>
 	</body>
 </html>

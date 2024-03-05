@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, textarea, input, select, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-family: "Nunito", sans-serif;
+  color: #ff4081;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #fce4ec;
+}
+
+nav {
+  font-family: "Nunito", sans-serif;
+  background-color: #ff4081;
+  color: #fce4ec;
+  display: flex;
+}
+
+nav header {
+  padding: 8px;
+  display: inline;
+}
+
+nav header a {
+  text-decoration: none;
+  color: #fce4ec;
+}
+
+nav header a:hover {
+  color: #fab9cf;
+}
+
+nav header + input:checked + div {
+  display: block;
+}
+
+nav div {
+  display: none;
+  margin-left: auto;
+}
+
+nav div ul {
+  list-style: none;
+  display: flex;
+  margin: 0 10px;
+}
+
+nav div ul li a {
+  display: inline-block;
+  padding: 8px;
+  color: #fce4ec;
+  text-decoration: none;
+}
+
+nav div ul li:hover {
+  background-color: #fab9cf;
+}
+
+nav div ul li ul {
+  right: 0;
+  position: relative;
+  background: pink;
+}
+
+@media (max-width: 630px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav div {
+    margin: auto;
+  }
+
+  nav div ul {
+    padding: 0;
+  }
+
+  nav div ul li {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  nav div ul li[active],
+  nav div ul li.active {
+    border: 1px solid #ff80ab;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 630px) {
+  nav div ul li.active,
+  nav div ul li[active] {
+    border: 1px solid #ff80ab;
+    border-bottom: none;
+    border-top: none;
+  }
+
+  nav header label {
+    display: none;
+  }
+}
+
+section[container] {
+  max-width: 38em;
+  margin: auto;
+  padding: 5px;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.25em; }
+h6 { font-size: 1em; }
+
+a { text-decoration: none;
+    color: #ff4081; }
+
+a:hover { text-decoration: none;
+    color: #ff4081; }
+
+mark { background-color: #fab9cf; }
+
+code {
+  font-family: monospace;
+  background-color: #e0e0e0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+pre {
+  background: #880e4f;
+  overflow-x: auto;
+  text-align: left;
+  padding: 5px;
+}
+
+pre code {
+  display: block;
+  padding: 0 10px;
+  background: transparent;
+}
+
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+
+button {
+    padding: 20px;
+    margin-right: 2em;
+    background-color: #fab9cf;
+    color: #ff4081;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s ease-out;
+  }
+  
+  button:hover {
+    background-color: #fab9cf;
+    margin-right: 2em;
+    color: #ff4081;
+    transform: scale(1.05);
+  }
