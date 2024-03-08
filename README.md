@@ -1,3 +1,5 @@
+donomoria-documentation.netlify.app
+
 ## Grundlagen der digitalen Kommunikation. Documentation WiSe 23/24. Maryia Kukharenka.
 
 Contents
