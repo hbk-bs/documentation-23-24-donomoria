@@ -152,6 +152,11 @@ img {
   border-radius: 5px;
 }
 
+video {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
 .button-link {
     text-decoration: none;
   }
