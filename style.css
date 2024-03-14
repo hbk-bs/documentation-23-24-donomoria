@@ -17,6 +17,10 @@ nav {
   background-color: #ff4081;
   color: #fce4ec;
   display: flex;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000;
 }
 
 nav header {
@@ -63,6 +67,10 @@ nav div ul li ul {
   right: 0;
   position: relative;
   background: pink;
+}
+
+.spacer {
+  height: 2em;
 }
 
 @media (max-width: 630px) {
